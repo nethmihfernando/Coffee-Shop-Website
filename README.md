@@ -12,8 +12,3 @@ A modern, elegant artisan coffee shop website featuring a dynamic menu, real-tim
 * HTML5
 * CSS3 (Custom properties and Flexbox/Grid)
 * JavaScript (ES6+)
-
-## 🚀 Local Setup
-1. Clone the repository.
-2. Open `index.html` in your browser.
-3. To test the order form, replace `your_id` in `order.html` with a valid Formspree ID.
