@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order | Café Bella</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .order-container {
+            padding: 5rem 10%;
+            display: flex;
+            justify-content: center;
+            background-color: var(--bg);
+            min-height: 100vh;
+        }
+        .order-form-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 700px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        form { display: flex; flex-direction: column; gap: 1.5rem; }
+        label { font-weight: 600; color: var(--primary); margin-bottom: -0.5rem; }
+        
+        input[type="text"], textarea {
+            padding: 1rem;
+            border: 1px solid var(--secondary);
+            border-radius: 8px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        /* Checkbox Group Styling */
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            font-weight: 400 !important;
+            color: var(--text) !important;
+            cursor: pointer;
+        }
+
+        .checkbox-item input {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--primary);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                <img src="images/logo.jpeg" alt="Café Bella Logo" class="nav-logo">
+                <span class="logo-text">Café Bella</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="order-container">
+        <div class="order-form-card">
+            <div class="form-header">
+                <h2>Complete Your Order</h2>
+                <p>Select your favorites and we'll handle the rest.</p>
+            </div>
+            
+            <form action="https://formspree.io/f/your_id" method="POST">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="John Doe" required>
+                
+                <label>Delivery Address</label>
+                <input type="text" name="address" placeholder="123 Coffee Lane" required>
+                
+                <label>The Daily Brews</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Lavender Latte"> Lavender Latte</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Rosemary Honey Macchiato"> Rosemary Honey Macchiato</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Golden Tumeric Glow"> Golden Tumeric Glow</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Flat White"> Flat White</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Sage & Maple Breve"> Sage & Maple Breve</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Matcha Willow"> Matcha Willow</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Honey Macchiato"> Honey Macchiato</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Rose Petal Cortado"> Rose Petal Cortado</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Forest Pour Over"> Forest Pour Over</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Orange Blossom Cappuccino"> Orange Blossom Cappuccino</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Hibiscus Berry Haze"> Hibiscus Berry Haze</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Midnight Truffle Mocha"> Midnight Truffle Mocha</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Cherry Earl Grey Milk Tea"> Cherry Earl Grey Milk Tea</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Vanilla Orchid Cold Brew"> Vanilla Orchid Cold Brew</label>
+                    <label class="checkbox-item"><input type="checkbox" name="brew" value="Cold Brew Float"> Cold Brew Float</label>
+                </div>
+
+                <label>Artisanal Bites</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="Avocado Garden Toast"> Avocado Garden Toast</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="Smoked Vanilla Crème Brûlée"> Smoked Vanilla Crème Brûlée</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="Ruby Pistachio Tart"> Ruby Pistachio Tart</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="Velvet Berry Tart"> Velvet Berry Tart</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="The Gilded Coconut Cheesecake"> The Gilded Coconut Cheesecake</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="Velvet Twilight Mousset"> Velvet Twilight Mousse</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="Pistachio Rose Croissant"> Pistachio Rose Croissant</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="Eldflower Lemon Loaf"> Eldflower Lemon Loaf</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="Midnight Cocoa Croissants"> Midnight Cocoa Croissants</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="Espresso Cloud Tiramisu"> Espresso Cloud Tiramisu</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="The Honeycomb Toffee Macaron"> The Honeycomb Toffee Macaron</label>
+                    <label class="checkbox-item"><input type="checkbox" name="food" value="The Obsidian Stack"> The Obsidian Stack</label>
+                </div>
+
+                <label>Special Instructions</label>
+                <textarea name="notes" rows="4" placeholder="Extra cream, gate code, etc."></textarea>
+
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

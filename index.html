@@ -9,13 +9,15 @@
 <body>
     <nav>
         <div class="logo-container">
-        <img src="logo.jpeg" alt="Café Bella Logo" class="nav-logo">
-        <span class="logo-text">Café Bella</span>
+        <img src="images/logo.jpeg" alt="Café Bella Logo" class="nav-logo">
+        <a href="index.html" style="text-decoration: none;">
+        <span class="logo-text">Café Bella</span></a>
         </div>
         <ul class="nav-links">
             <li><a href="#menu">Menu</a></li>
             <li><a href="#about">Our Story</a></li>
             <li><a href="#location">Find Us</a></li>
+            <li><a href="#delivery">Order</a></li>
         </ul>
         <!-- Replaced Order button with Search Bar -->
         <div class="search-container">
@@ -52,6 +54,7 @@
 
         <div class="menu-grid" id="menu-grid">
             <div class="menu-item">
+                <img src="images/lavender-latte.jpg" alt="Lavender Latte" class="menu-img">
                 <div class="item-info">
                     <h3>Lavender Latte</h3>
                     <p>Espresso, steamed oat milk, organic lavender syrup.</p>
@@ -59,13 +62,23 @@
                 <span class="price">$5.50</span>
             </div>
             <div class="menu-item">
+                <img src="images/Rosemary-Honey-Macchiato.jpeg" alt="Rosemary Honey Macchiato" class="menu-img">
                 <div class="item-info">
-                    <h3>Forest Pour Over</h3>
-                    <p>Single origin beans with notes of cedar and berry.</p>
+                    <h3>Rosemary Honey Macchiato</h3>
+                    <p>Marked with foam and local wildflower honey.</p>
                 </div>
-                <span class="price">$4.75</span>
+                <span class="price">$6.50</span>
             </div>
             <div class="menu-item">
+                <img src="images/Golden-Tumeric-Glow.jpg" alt="Golden Tumeric Glow" class="menu-img">
+                <div class="item-info">
+                    <h3>Golden Tumeric Glow</h3>
+                    <p>A caffeine-free blend of turmeric, ginger, and black pepper with coconut milk.</p>
+                </div>
+                <span class="price">$6.25</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/flat-white.jpg" alt="Lavender Latte" class="menu-img">
                 <div class="item-info">
                     <h3>Flat White</h3>
                     <p>Ristretto shots with silky microfoam.</p>
@@ -73,6 +86,15 @@
                 <span class="price">$4.25</span>
             </div>
             <div class="menu-item">
+                <img src="images/Sage&Maple-Breve.jpg" alt="Sage & Maple Breve" class="menu-img">
+                <div class="item-info">
+                    <h3>Sage & Maple Breve</h3>
+                    <p>A creamy, savory-sweet balance of fresh sage and pure maple syrup.</p>
+                </div>
+                <span class="price">$6.50</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/matcha-willow.jpg" alt="Lavender Latte" class="menu-img">
                 <div class="item-info">
                     <h3>Matcha Willow</h3>
                     <p>Ceremonial grade matcha with honey and almond milk.</p>
@@ -80,32 +102,207 @@
                 <span class="price">$5.25</span>
             </div>
             <div class="menu-item">
-                <div class="item-info">
-                    <h3>Cold Brew Float</h3>
-                    <p>12-hour steep topped with vanilla bean cream.</p>
-                </div>
-                <span class="price">$6.00</span>
-            </div>
-            <div class="menu-item">
+                <img src="images/honey-macchiato.jpg" alt="Lavender Latte" class="menu-img">
                 <div class="item-info">
                     <h3>Honey Macchiato</h3>
                     <p>Marked with foam and local wildflower honey.</p>
                 </div>
                 <span class="price">$4.50</span>
             </div>
+            <div class="menu-item">
+                <img src="images/Rose-Petal-Cortado.jpg" alt="Lavender Latte" class="menu-img">
+                <div class="item-info">
+                    <h3>Rose Petal Cortado</h3>
+                    <p>Espresso cut with velvety milk and a hint of organic rose water.</p>
+                </div>
+                <span class="price">$5.25</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Forest-Pour-Over.jpg" alt="Lavender Latte" class="menu-img">
+                <div class="item-info">
+                    <h3>Forest Pour Over</h3>
+                    <p>Single origin beans with notes of cedar and berry.</p>
+                </div>
+                <span class="price">$4.75</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Orange-Blossom-Cappuccino.jpg" alt="Orange Blossom Cappuccino" class="menu-img">
+                <div class="item-info">
+                    <h3>Orange Blossom Cappuccino</h3>
+                    <p>Classic foam dusted with dried orange zest and blossom essence.</p>
+                </div>
+                <span class="price">$5.50</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Hibiscus-Berry-Haze.jpg" alt="Lavender Latte" class="menu-img">
+                <div class="item-info">
+                    <h3>Hibiscus Berry Haze</h3>
+                    <p>A vibrant, chilled tea-based brew with floral notes and fresh mint.</p>
+                </div>
+                <span class="price">$6.25</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Midnight-Truffle-Mocha.jpg" alt="Midnight Truffle Mocha" class="menu-img">
+                <div class="item-info">
+                    <h3>Midnight Truffle Mocha</h3>
+                    <p>Dark chocolate and espresso with a hint of sea salt and hazelnut.</p>
+                </div>
+                <span class="price">$6.75</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Cherry-Earl-Grey-Milk-Tea.jpg" alt="Cherry Earl Grey Milk Tea" class="menu-img">
+                <div class="item-info">
+                    <h3>Cherry Earl Grey Milk Tea</h3>
+                    <p>A dreamy blend of floral bergamot and sweet black cherry, finished with a smooth, velvety creaminess.</p>
+                </div>
+                <span class="price">$5.75</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Vanilla-Orchid-Cold-Brew.jpg" alt="Vanilla Orchid Cold Brew" class="menu-img">
+                <div class="item-info">
+                    <h3>Vanilla Orchid Cold Brew</h3>
+                    <p>Slow-steeped for 12 hours with Madagascar vanilla bean.</p>
+                </div>
+                <span class="price">$6.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/cold-brew-float.jpeg" alt="Lavender Latte" class="menu-img">
+                <div class="item-info">
+                    <h3>Cold Brew Float</h3>
+                    <p>12-hour steep topped with vanilla bean cream.</p>
+                </div>
+                <span class="price">$6.00</span>
+            </div>
         </div>
     </section>
+    <section id="menu" class="menu-section">
+        <div class="section-title">
+            <h2>Artisanal Bites</h2>
+            <p>A symphony of flavors, crafted to delight.</p>
+        </div>
 
+        <!-- Added a "No Results" message container -->
+        <div id="no-results" style="display: none; text-align: center; padding: 2rem; color: #888;">
+            No items match your search.
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+            <div class="menu-item">
+                <img src="images/Avocado-Garden-Toast.jpg" alt="Avocado Garden Toast" class="menu-img">
+                <div class="item-info">
+                    <h3>Avocado Garden Toast</h3>
+                    <p>Multigrain bread topped with radish roses and edible pansies.</p>
+                </div>
+                <span class="price">$12.50</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Smoked-Vanillaa-Crème-Brûlée.jpeg" alt="Smoked Vanilla Crème Brûlée" class="menu-img">
+                <div class="item-info">
+                    <h3>Smoked Vanilla Crème Brûlée</h3>
+                    <p>Silky Tahitian vanilla bean custard under a glass-like shell of burnt sugar, served with a single sprig of charred rosemary for a subtle earthy aroma.</p>
+                </div>
+                <span class="price">$9.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Ruby-Pistachio-Tart.jpeg" alt="The Ruby Pistachio Tart" class="menu-img">
+                <div class="item-info">
+                    <h3>The Ruby Pistachio Tart</h3>
+                    <p>A crisp, charcoal-infused shortbread crust filled with vibrant pistachio praline and topped with a delicate swirl of naturally pink Ruby chocolate ganache.</p>
+                </div>
+                <span class="price">$7.50</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Velvet-Berry-Tart.jpg" alt="Velvet Berry Tart" class="menu-img">
+                <div class="item-info">
+                    <h3>Velvet Berry Tart</h3>
+                    <p>A delicate pastry with seasonal berries and a mascarpone filling.</p>
+                </div>
+                <span class="price">$7.25</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/cheese-cake.jpg" alt="The Gilded Coconut Cheesecake" class="menu-img">
+                <div class="item-info">
+                    <h3>The Gilded Coconut Cheesecake</h3>
+                    <p>A velvety, slow-baked classic infused with toasted coconut, finished with a white chocolate drip and hand-piped Chantilly peaks.</p>
+                </div>
+                <span class="price">$8.50</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Velvet-Twilight-Mousse.jpeg" alt="Velvet Twilight Mousse" class="menu-img">
+                <div class="item-info">
+                    <h3>Velvet Twilight Mousse</h3>
+                    <p>An ethereal duo of Madagascar vanilla and wild blueberry mousse, crowned with a crystalline berry glaze and fresh mint.</p>
+                </div>
+                <span class="price">$7.75</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Pistachio-Rose-Croissant.jpg" alt="Pistachio Rose Croissant" class="menu-img">
+                <div class="item-info">
+                    <h3>Pistachio Rose Croissant</h3>
+                    <p>Flaky layers with a nutty cream and floral glaze.</p>
+                </div>
+                <span class="price">$5.75</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Eldflower-Lemon-Loaf.jpg" alt="Eldflower Lemon Loaf" class="menu-img">
+                <div class="item-info">
+                    <h3>Eldflower Lemon Loaf</h3>
+                    <p>A bright, citrusy cake with a light elderflower drizzle.</p>
+                </div>
+                <span class="price">$4.50</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Midnight-Cocoa-Croissants.jpeg" alt="Midnight Cocoa Croissants" class="menu-img">
+                <div class="item-info">
+                    <h3>Midnight Cocoa Croissants</h3>
+                    <p>Flaky, butter-laminated layers hiding a molten dark chocolate heart, elegantly drizzled with a rich silken ganache.</p>
+                </div>
+                <span class="price">$5.50</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Espresso-Cloud-Tiramisu.jpeg" alt="Espresso Cloud Tiramisu" class="menu-img">
+                <div class="item-info">
+                    <h3>Espresso Cloud Tiramisu</h3>
+                    <p>Deconstructed layers of espresso-soaked sponge and airy mascarpone mousse, finished with a heavy dusting of 24-karat gold-flecked cocoa powder.</p>
+                </div>
+                <span class="price">$8.25</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Honeycomb-Toffee-Macaron.jpeg" alt="The Honeycomb Toffee Macaron" class="menu-img">
+                <div class="item-info">
+                    <h3>The Honeycomb Toffee Macaron</h3>
+                    <p>An oversized, salted caramel macaron filled with a cloud of whipped honey buttercream and studded with shards of golden, house-made honeycomb.</p>
+                </div>
+                <span class="price">$3.25</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/The-Obsidian-Stack.jpeg" alt="Eldflower Lemon Loaf" class="menu-img">
+                <div class="item-info">
+                    <h3>The Obsidian Stack</h3>
+                    <p>Triple-layered fudge brownies, intensely dark and dense, topped with warm flowing chocolate and hand-selected cacao nibs.</p>
+                </div>
+                <span class="price">$13.50</span>
+            </div>
+        </div>
+    </section>
+    <section id="delivery" class="delivery-section">
+        <div class="delivery-card">
+            <h2>Freshly Brewed, Delivered.</h2>
+            <p>Can't make it to the café? We'll bring the elegance to you.</p>
+            <br>
+            <a href="order.html" class="btn btn-primary">Order Now</a>
+        </div>
+    </section>
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>Willow & Bean</h4>
-                <p>Making mornings meaningful since 2024.</p>
+                <h4>Café Bella</h4>
+                <p>Making mornings meaningful since 2026.</p>
             </div>
             <div class="footer-col">
                 <h4>Hours</h4>
-                <p>Mon - Fri: 7am - 6pm</p>
-                <p>Sat - Sun: 8am - 4pm</p>
+                <p>Mon - Fri: 7am - 9pm</p>
+                <p>Sat - Sun: 8am - 6pm</p>
             </div>
             <div class="footer-col">
                 <h4>Location</h4>
