@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Bella | Artisan Coffee</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For Instagram and Facebook Icons -->
 </head>
 <body>
-    <!--Logo and the Header Section/ NavBar-->
+<!-- Logo and the Header Section/ NavBar -->
     <nav>
         <div class="logo-container">
             <img src="images/logo.jpeg" alt="Café Bella Logo" class="nav-logo">
@@ -21,27 +21,29 @@
             <li><a href="#delivery">Order</a></li>
             <li><a href="#location">Find Us</a></li>
         </ul>
-        <!-- Search Bar Button-->
-        <div class="search-container">
-            <input type="text" id="menu-search" placeholder="Search menu...">
-            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+<!-- Current Weather -->
+        <div class="nav-right">
+            <div class="weather-mood" id="weather-mood">
+                <span id="weather-icon"></span>
+                <span id="mood-text">Loading the vibe...</span>
+            </div>
         </div>
     </nav>
-    <!--Hero Section-->
+<!-- Hero Section -->
     <header>
         <div class="hero-content">
             <h1>Where Beauty Meets Brew</h1>
             <p><b>We blend quality, comfort, and elegance to craft coffee that’s as beautiful as it tastes.</b></p>
         </div>
     </header>
-    <!--Current Status-->
+<!-- Current Status -->
     <div class="status-container">
-            <div class="status-badge" id="status-badge">
-                <span class="dot" id="status-dot"></span>
-                <span id="status-text">Checking Status...</span>
+        <div class="status-badge" id="status-badge">
+            <span class="dot" id="status-dot"></span>
+            <span id="status-text">Checking Status...</span>
         </div>
     </div>
-    <!--About Section-->
+<!-- About Section -->
     <section id="about" class="about-section">
         <div class="about-container">
             <div class="about-text">
@@ -54,6 +56,7 @@
         </div>
     </div>
     </section>
+    <!-- Why Choose Us -->
     <section id="why-choose-us" class="features-section">
         <div class="section-title">
             <h2>Why Café Bella?</h2>
@@ -76,18 +79,14 @@
             </div>
         </div>
     </section>
-    <!--Menu Section-->
+<!-- Menu Section -->
     <section id="menu" class="menu-section">
         <div class="section-title">
             <h2>The Daily Brews</h2>
             <p>Crafted by baristas who care.</p>
         </div>
 
-        <!-- Added a "No Results" message container -->
-        <div id="no-results" style="display: none; text-align: center; padding: 2rem; color: #888;">
-            No items match your search.
-        </div>
-        <!--Menu Items - Drinks-->
+    <!-- Menu Items - Drinks -->
         <div class="menu-grid" id="menu-grid">
             <div class="menu-item">
                 <img src="images/lavender-latte.jpg" alt="Lavender Latte" class="menu-img">
@@ -217,11 +216,7 @@
             <p>A symphony of flavors, crafted to delight.</p>
         </div>
 
-        <!-- Added a "No Results" message container -->
-        <div id="no-results" style="display: none; text-align: center; padding: 2rem; color: #888;">
-            No items match your search.
-        </div>
-        <!--Menu Items - Drinks-->
+    <!-- Menu Items - Drinks -->
         <div class="menu-grid" id="menu-grid">
             <div class="menu-item">
                 <img src="images/Avocado-Garden-Toast.jpg" alt="Avocado Garden Toast" class="menu-img">
@@ -321,16 +316,18 @@
             </div>
         </div>
     </section>
-    <!--Order Section-->
+
+<!-- Order Section -->
     <section id="delivery" class="delivery-section">
         <div class="delivery-card">
             <h2>Freshly Brewed, Delivered.</h2>
             <p>Can't make it to the café? We'll bring the elegance to you.</p>
             <br>
-            <a href="order.html" class="btn btn-primary">Order Now</a> <!--Form to Order-->
+            <a href="order.html" class="btn btn-primary">Order Now</a> <!-- Form to Order -->
         </div>
     </section>
-    <!--Testimonials Section-->
+
+<!-- Testimonials Section -->
     <section class="testimonials-section">
     <div class="section-title">
         <h2>Echoes of Elegance</h2>
@@ -424,6 +421,8 @@
         </div>
     </div>
     </section>
+
+<!-- Footer Section -->
     <footer id="location">
     <div class="footer-grid">
         <div class="footer-col brand-col">
@@ -449,6 +448,7 @@
 
         <div class="footer-col">
             <h4>Connect</h4>
+            <p>+1234567890</p>
             <p>42 Bloom Terrace, Garden District, Greenwich, CT 06830</p>
             <div class="social-links">
                 <a href="https://instagram.com" target="_blank" aria-label="Instagram">

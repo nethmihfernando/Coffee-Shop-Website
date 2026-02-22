@@ -38,6 +38,7 @@ nav {
     z-index: 1000;
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
+
 /* Container to hold both image and text */
 .logo-container {
     display: flex;
@@ -98,45 +99,28 @@ nav {
     width: 100%;
 }
 
-/* --- Search Bar Styling --- */
-.search-container {
-    position: relative;
+/* --- Weather Section --- */
+.weather-mood {
     display: flex;
     align-items: center;
+    gap: 8px;
+    background: rgba(45, 74, 62, 0.05);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--primary);
+    border: 1px solid rgba(45, 74, 62, 0.1);
+    backdrop-filter: blur(4px);
 }
 
-#menu-search {
-    padding: 0.8rem 1.5rem 0.8rem 3rem;
-    border-radius: 50px;
-    border: none;
-    outline: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    width: 220px;
-    transition: var(--transition);
-    background-color: var(--primary); /* Matching the button color */
-    color: white; /* Matching button text */
-    text-transform: uppercase;
-    letter-spacing: 1px;
+#weather-icon {
+    font-size: 1.2rem;
 }
 
-/* Placeholder color for dark background */
-#menu-search::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-    text-transform: uppercase;
-}
-
-#menu-search:focus {
-    width: 280px;
-    box-shadow: 0 8px 16px rgba(45, 74, 62, 0.2);
-}
-
-.search-icon {
-    position: absolute;
-    left: 15px;
-    color: white;
-    pointer-events: none;
-    opacity: 0.8;
+#mood-text {
+    font-family: 'Georgia', serif;
+    font-style: italic;
 }
 
 /* --- Hero Section --- */
@@ -147,7 +131,7 @@ header {
     justify-content: center;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
-                url('images/coffee-2.jpeg') center/cover no-repeat;
+                url('images/coffee-3.png') center/cover no-repeat;
     color: var(--bg);
     padding: 0 1rem;
 }
@@ -230,17 +214,17 @@ header {
 }
 
 .closed-dot { background-color: #f44336; }
-
+ /* Dot to make look Active */
 @keyframes pulse {
-    0% { transform: scale(0.9); opacity: 0.7; }
-    70% { transform: scale(1.2); opacity: 1; }
-    100% { transform: scale(0.9); opacity: 0.7; }
+    0% { transform: scale(0.9); opacity: 0.7; } /* smaller */
+    70% { transform: scale(1.2); opacity: 1; } /* larger */
+    100% { transform: scale(0.9); opacity: 0.7; } /* repeats */
 }
 
-/*Our Story*/
+/* --- Our Story ---*/
 .about-section {
     padding: 100px 10%;
-    background-color: white; /* Contrast against your cream background */
+    background-color: white;
     text-align: center;
 }
 
@@ -260,7 +244,7 @@ header {
     color: var(--text);
 }
 
-/* ---Why choose us--- */
+/* --- Why choose us --- */
 .features-section {
     padding: 6rem 10%;
     background-color: var(--bg);
@@ -279,7 +263,7 @@ header {
     border-radius: 20px;
     text-align: center;
     transition: var(--transition);
-    border: 1px solid rgba(45, 74, 62, 0.1); /* Subtle primary color border */
+    border: 1px solid rgba(45, 74, 62, 0.1);
 }
 
 .feature-card:hover {
@@ -338,9 +322,9 @@ header {
 
 .menu-img {
     width: 100%;
-    height: 200px; /* Adjust height to your liking */
-    object-fit: cover; /* This prevents the image from looking stretched */
-    border-radius: 12px; /* Rounds the corners of the image to match your cards */
+    height: 200px;
+    object-fit: cover; /* Prevents the image from looking stretched */
+    border-radius: 12px; /* Rounds the corners of the image */
     margin-bottom: 0.5rem;
 }
 
@@ -363,9 +347,9 @@ header {
     color: var(--accent);
 }
 
-/*delivery section */
+/* --- Delivery Section --- */
 .delivery-section {
-    padding: 10rem 10%; /* More padding gives the image more room */
+    padding: 10rem 10%;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('images/delivery.jpeg') center/cover no-repeat;
     width: 100%;
@@ -395,7 +379,7 @@ header {
 /* --- Testimonials Section --- */
 .testimonials-section {
     padding: 6rem 10%;
-    background-color: var(--bg); /* Using your cream background */
+    background-color: var(--bg);
     overflow: hidden;
 }
 
@@ -452,7 +436,7 @@ header {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1.2rem;
-    border: 3px solid var(--secondary); /* Matches your brand color */
+    border: 3px solid var(--secondary);
 }
 
 /* Typography */
@@ -529,14 +513,14 @@ header {
 }
 
 .dot-nav.active {
-    background: var(--secondary); /* Highlighting the active slide */
-    width: 25px; /* Makes the active dot an oval, like your reference */
+    background: var(--secondary); /* Highlight the active slide */
+    width: 25px; /* Makes the active dot an oval*/
     border-radius: 10px;
 }
 
 /* --- Footer --- */
 footer {
-    background-color: var(--primary); /* Dark green from your brand */
+    background-color: var(--primary);
     color: #fdfaf7; /* Off-white text for readability */
     padding: 4rem 10% 2rem;
 }
@@ -552,7 +536,7 @@ footer {
     font-family: 'Georgia', serif;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color: var(--secondary); /* Gold/Tan accent color */
+    color: var(--secondary);
 }
 
 .footer-col p, .footer-col ul {
@@ -584,14 +568,14 @@ footer {
 }
 
 .social-links a {
-    color: #fdfaf7; /* Off-white to match your text */
+    color: #fdfaf7;
     font-size: 1.5rem; /* Makes the logos clearly visible */
     transition: all 0.3s ease;
     text-decoration: none;
 }
 
 .social-links a:hover {
-    color: var(--secondary); /* Changes to your gold/tan brand color on hover */
+    color: var(--secondary);
     transform: translateY(-3px); /* Subtle lift effect */
 }
 

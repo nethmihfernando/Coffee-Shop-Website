@@ -1,7 +1,5 @@
-/**
- * Dynamic Shop Status Logic
- * Checks if the shop is currently open based on user's local time
- */
+/*-- Checks if the shop is currently open based on user's local time --*/
+
 function updateShopStatus() {
     const now = new Date();
     const day = now.getDay(); // 0 = Sunday, 1 = Monday...
@@ -15,13 +13,13 @@ function updateShopStatus() {
 
     let isOpen = false;
 
-    // Weekdays (Mon-Fri) 7am - 6pm
+    // Weekdays (Mon-Fri) 7am - 9pm
     if (day >= 1 && day <= 5) {
-        if (hour >= 7 && hour < 18) isOpen = true;
+        if (hour >= 7 && hour < 21) isOpen = true;
     } 
-    // Weekend (Sat-Sun) 8am - 4pm
+    // Weekend (Sat-Sun) 8am - 6pm
     else {
-        if (hour >= 8 && hour < 16) isOpen = true;
+        if (hour >= 8 && hour < 18) isOpen = true;
     }
 
     if (isOpen) {
@@ -33,9 +31,7 @@ function updateShopStatus() {
     }
 }
 
-/**
- * Initialize animations and status
- */
+/*--- Initialize animations and status ---*/
 function init() {
     updateShopStatus();
 
@@ -119,3 +115,41 @@ wrapper.addEventListener('scroll', () => {
     dots.forEach(dot => dot.classList.remove('active'));
     if (dots[index]) dots[index].classList.add('active');
 });
+
+/*--- Check the Current Weather and Update ---*/
+async function updateWeatherMood() {
+    const moodElement = document.getElementById('mood-text');
+    const iconElement = document.getElementById('weather-icon');
+    
+    // Using a simple open-access weather API for Greenwich
+    try {
+        const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=51.4779&longitude=0.0015&current_weather=true');
+        const data = await response.json();
+        const temp = data.current_weather.temperature;
+        const code = data.current_weather.weathercode;
+
+        let mood = "";
+        let icon = "";
+
+        if (code <= 3) { // Clear or mainly clear
+            icon = "☀️";
+            mood = `Sunny in Greenwich — Perfect for a Cold Brew`;
+        } else if (code >= 51 && code <= 67) { // Rain
+            icon = "🌧️";
+            mood = `Rainy day sanctuary — Warm up with a Cortado`;
+        } else { // Cloudy/Other
+            icon = "☁️";
+            mood = `Cozy vibes today — Your table is waiting`;
+        }
+
+        iconElement.innerHTML = icon;
+        moodElement.innerHTML = mood;
+        
+    } catch (error) {
+        // Fallback if API fails
+        iconElement.innerHTML = "✨";
+        moodElement.innerHTML = "Beauty Meets Brew — Open until 9pm";
+    }
+}
+
+updateWeatherMood();
