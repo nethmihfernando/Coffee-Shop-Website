@@ -330,6 +330,68 @@ header {
     margin-bottom: 1rem;
 }
 
+/*Our Story*/
+.about-section {
+    padding: 100px 10%;
+    background-color: white; /* Contrast against your cream background */
+    text-align: center;
+}
+
+.about-text h2 {
+    font-family: 'Georgia', serif;
+    color: var(--primary);
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    
+}
+
+.about-text p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 2;
+    color: var(--text);
+}
+
+/* ---Why choose us--- */
+.features-section {
+    padding: 6rem 10%;
+    background-color: var(--bg);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(45, 74, 62, 0.1); /* Subtle primary color border */
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.feature-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
 /* --- Footer --- */
 footer {
     background: var(--primary);
