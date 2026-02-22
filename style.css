@@ -47,9 +47,9 @@ nav {
 
 /* Style for the logo image */
 .nav-logo {
-    height: 60px; /* Adjust this to make the logo larger or smaller */
+    height: 60px;
     width: auto;
-    border-radius: 60%; /* Keeps it circular if your jpeg has corners */
+    border-radius: 60%;
 }
 
 /* Style for the text */
@@ -98,7 +98,7 @@ nav {
     width: 100%;
 }
 
-/* --- Search Bar Styling (Styled like the View Menu Button) --- */
+/* --- Search Bar Styling --- */
 .search-container {
     position: relative;
     display: flex;
@@ -147,7 +147,7 @@ header {
     justify-content: center;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
-                url('images/coffee-1.jpeg') center/cover no-repeat;
+                url('images/coffee-2.jpeg') center/cover no-repeat;
     color: var(--bg);
     padding: 0 1rem;
 }
@@ -235,6 +235,68 @@ header {
     0% { transform: scale(0.9); opacity: 0.7; }
     70% { transform: scale(1.2); opacity: 1; }
     100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+/*Our Story*/
+.about-section {
+    padding: 100px 10%;
+    background-color: white; /* Contrast against your cream background */
+    text-align: center;
+}
+
+.about-text h2 {
+    font-family: 'Georgia', serif;
+    color: var(--primary);
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    
+}
+
+.about-text p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 2;
+    color: var(--text);
+}
+
+/* ---Why choose us--- */
+.features-section {
+    padding: 6rem 10%;
+    background-color: var(--bg);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(45, 74, 62, 0.1); /* Subtle primary color border */
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.feature-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* --- Menu Section --- */
@@ -330,89 +392,222 @@ header {
     margin-bottom: 1rem;
 }
 
-/*Our Story*/
-.about-section {
-    padding: 100px 10%;
-    background-color: white; /* Contrast against your cream background */
-    text-align: center;
-}
-
-.about-text h2 {
-    font-family: 'Georgia', serif;
-    color: var(--primary);
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
-    
-}
-
-.about-text p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.15rem;
-    line-height: 2;
-    color: var(--text);
-}
-
-/* ---Why choose us--- */
-.features-section {
+/* --- Testimonials Section --- */
+.testimonials-section {
     padding: 6rem 10%;
-    background-color: var(--bg);
+    background-color: var(--bg); /* Using your cream background */
+    overflow: hidden;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+.testimonials-section .section-title {
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
-.feature-card {
-    background: white;
-    padding: 2.5rem;
+/* Slide Container Styling */
+.slide-container {
+    width: 100%;
+    position: relative;
+}
+
+.slide-wrapper {
+    overflow-x: auto; /* Allows horizontal scrolling */
+    padding: 20px 10px;
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
+
+.slide-wrapper::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome/Safari */
+}
+
+/* Horizontal List Alignment */
+.testimonials-list {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual Testimonial Card */
+.testimonials {
+    min-width: 280px;
+    max-width: 280px;
+    background: #ffffff;
+    padding: 2.5rem 1.5rem;
     border-radius: 20px;
     text-align: center;
-    transition: var(--transition);
-    border: 1px solid rgba(45, 74, 62, 0.1); /* Subtle primary color border */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(45, 74, 62, 0.05); /* Subtle brand border */
 }
 
-.feature-card:hover {
+.testimonials:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
 }
 
-.feature-card h3 {
+/* User Image Styling */
+.user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+    border: 3px solid var(--secondary); /* Matches your brand color */
+}
+
+/* Typography */
+.name {
+    font-size: 1.2rem;
     color: var(--primary);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Georgia', serif;
 }
 
-.feature-card p {
-    color: var(--text);
+.feedback {
+    display: block;
     font-size: 1rem;
+    color: var(--text);
     line-height: 1.6;
+    font-style: italic;
+    position: relative;
+}
+
+/* Adding Decorative Quote Marks */
+.feedback::before {
+    content: '"';
+    font-size: 2rem;
+    color: var(--secondary);
+    display: block;
+    height: 20px;
+    opacity: 0.5;
+}
+
+/* Navigation Arrows */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 1px solid var(--secondary);
+    color: var(--primary);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.prev-btn { left: -25px; }
+.next-btn { right: -25px; }
+
+.nav-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Dots Navigation */
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.dot-nav {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot-nav.active {
+    background: var(--secondary); /* Highlighting the active slide */
+    width: 25px; /* Makes the active dot an oval, like your reference */
+    border-radius: 10px;
 }
 
 /* --- Footer --- */
 footer {
-    background: var(--primary);
-    color: white;
-    padding: 5rem 10%;
-    margin-top: 5rem;
+    background-color: var(--primary); /* Dark green from your brand */
+    color: #fdfaf7; /* Off-white text for readability */
+    padding: 4rem 10% 2rem;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
 }
 
-/* Mobile adjustments */
-@media (max-width: 1000px) {
-    nav { flex-direction: column; gap: 1rem; }
-    .nav-links { gap: 2rem; }
-    #menu-search { width: 100%; }
+.footer-col h4 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary); /* Gold/Tan accent color */
 }
 
-@media (max-width: 768px) {
-    .nav-links { display: none; }
+.footer-col p, .footer-col ul {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: var(--secondary);
+    padding-left: 5px;
+}
+
+.social-links {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #fdfaf7; /* Off-white to match your text */
+    font-size: 1.5rem; /* Makes the logos clearly visible */
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--secondary); /* Changes to your gold/tan brand color on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+}
+
+/* Optional: specific brand colors on hover */
+.social-links a:hover .fa-instagram {
+    color: #E1306C; /* Instagram Pink */
+}
+
+.social-links a:hover .fa-facebook-f {
+    color: #1877F2; /* Facebook Blue */
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.7;
 }

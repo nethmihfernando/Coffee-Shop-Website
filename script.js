@@ -29,7 +29,7 @@ function updateShopStatus() {
         statusText.innerText = 'We are currently Open! Come say hi.';
     } else {
         statusDot.className = 'dot closed-dot';
-        statusText.innerText = 'Closed now. Opening at ' + (day >= 5 ? '8am' : '7am') + ' tomorrow.';
+        statusText.innerText = 'Closed now. Opening at ' + (day >= 5 ? '7am' : '8am') + ' tomorrow.';
     }
 }
 
@@ -77,3 +77,45 @@ function init() {
 
 // Start everything when DOM is ready
 document.addEventListener('DOMContentLoaded', init);
+
+
+//Navigation of Testimonials
+const wrapper = document.getElementById('slide-wrapper');
+const list = document.getElementById('testimonials-list');
+const dotsContainer = document.getElementById('dots-container');
+const prevBtn = document.getElementById('prev-slide');
+const nextBtn = document.getElementById('next-slide');
+
+const testimonials = document.querySelectorAll('.testimonials');
+const scrollAmount = 320; // Adjust based on card width + gap
+
+// 1. Create Dots based on number of testimonials
+testimonials.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot-nav');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+        wrapper.scrollTo({
+            left: index * scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+    dotsContainer.appendChild(dot);
+});
+
+// 2. Arrow Click Logic
+nextBtn.addEventListener('click', () => {
+    wrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+
+prevBtn.addEventListener('click', () => {
+    wrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+
+// 3. Update Dots on Scroll
+wrapper.addEventListener('scroll', () => {
+    const index = Math.round(wrapper.scrollLeft / scrollAmount);
+    const dots = document.querySelectorAll('.dot-nav');
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[index]) dots[index].classList.add('active');
+});
