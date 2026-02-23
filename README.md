@@ -1,10 +1,10 @@
-# Café Bella | Where Beauty Meets Brew
+# 🌸 Café BLumièreella | Where Beauty Meets Brew
 
 A fully responsive, interactive coffee shop website built with HTML, CSS, and JavaScript.
 This project demonstrates modern frontend development practices including DOM manipulation, API integration, animation techniques, and UI component logic.
 
 ## 📌 Project Overview
-Café Bella is a multi-page frontend web project designed to simulate a real-world artisan coffee shop website. The goal of this project was to combine elegant UI design with meaningful interactivity.
+Café Lumière is a multi-page frontend web project designed to simulate a real-world artisan coffee shop website. The goal of this project was to combine elegant UI design with meaningful interactivity.
 
 The application includes dynamic elements such as:
 * Real-time shop status detection
