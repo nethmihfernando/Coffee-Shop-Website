@@ -1,4 +1,4 @@
-# 🌸 Café BLumièreella | Where Beauty Meets Brew
+# 🌸 Café Lumière | Where Beauty Meets Brew
 
 A fully responsive, interactive coffee shop website built with HTML, CSS, and JavaScript.
 This project demonstrates modern frontend development practices including DOM manipulation, API integration, animation techniques, and UI component logic.
