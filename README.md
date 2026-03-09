@@ -18,21 +18,7 @@ A fully responsive, multi-page coffee shop website I designed and built entirely
 
 ---
 
-## ✨ About The Project
 
-Café Serafina is inspired by romantic European cafés — floral notes, artisan pastries, and soft luxury aesthetics.
-
-The website includes:
-
-- A welcoming hero section with brand storytelling  
-- A fully designed menu with handcrafted items  
-- A live shop status indicator  
-- Weather-based mood updates using an API  
-- Scroll animations for menu items  
-- A testimonial slider with navigation controls  
-- A separate online order page  
-
-The intention behind this project was to move beyond beginner HTML/CSS layouts and explore interactive UI behavior using vanilla JavaScript.
 
 ---
 
