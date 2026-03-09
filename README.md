@@ -27,6 +27,7 @@ A fully responsive, multi-page coffee shop website I designed and built entirely
 🍽️ Menu grid with scroll-triggered fade-in animations </br>
 🎠 Custom-built testimonial carousel with arrow navigation and dot indicators </br>
 📋 Online order form with drinks and food selection via Formspree
+📱 Fully responsive design for mobile and desktop
 
 ---
 
