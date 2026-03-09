@@ -26,6 +26,7 @@ A fully responsive, multi-page coffee shop website I designed and built entirely
 🌦️ Real-time weather mood updates using Open-Meteo API </br>
 🍽️ Menu grid with scroll-triggered fade-in animations </br>
 🎠 Custom-built testimonial carousel with arrow navigation and dot indicators </br>
+📋 Online order form with drinks and food selection via Formspree
 
 ---
 
