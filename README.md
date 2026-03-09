@@ -14,7 +14,7 @@
 
 ---
 
-A fully responsive, multi-page coffee shop website built using **HTML, CSS, and Vanilla JavaScript**, designed to simulate a refined artisan café experience with real-world interactive features.
+A fully responsive, multi-page coffee shop website I designed and built entirely from scratch. My goal was to push beyond basic static layouts and challenge myself to replicate the kind of polished, interactive experience you'd expect from a real-world business website, using only the core web technologies.
 
 ---
 
