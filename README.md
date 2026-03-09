@@ -20,7 +20,8 @@ A fully responsive, multi-page coffee shop website I designed and built entirely
 ## 🚀 Features
 
 🏠 Multi-page layout with a dedicated order page </br>
-📌 Sticky navbar with frosted glass blur effect and smooth scrolling
+📌 Sticky navbar with frosted glass blur effect and smooth scrolling </br>
+🎬 CSS zoom-out animation on page load
 
 ---
 
