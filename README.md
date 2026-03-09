@@ -50,18 +50,3 @@ Custom-built slider with arrow navigation and dynamic indicator dots.
 
 ### 📦 Online Order Page
 Multi-selection form allowing users to choose drinks and artisanal bites.
-
----
-
-## 📂 Project Structure
-
-```
-cafe-serafina/
-│
-├── index.html
-├── order.html
-├── style.css
-├── script.js
-├── images/
-└── people/
-```
