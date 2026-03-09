@@ -24,7 +24,8 @@ A fully responsive, multi-page coffee shop website I designed and built entirely
 🎬 CSS zoom-out animation on page load </br>
 🟢 Live shop open/closed status based on user's local time </br>
 🌦️ Real-time weather mood updates using Open-Meteo API </br>
-🍽️ Menu grid with scroll-triggered fade-in animations
+🍽️ Menu grid with scroll-triggered fade-in animations </br>
+🎠 Custom-built testimonial carousel with arrow navigation and dot indicators </br>
 
 ---
 
