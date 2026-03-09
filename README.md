@@ -1,6 +1,6 @@
 <p align="center">
   <h1 align="center">🌸 Café Serafina</h1>
-  <p align="center"><i>Where Every Cup Feels Like a Moment</i></p>
+  <p align="center"><i>Where Beauty Meets Brew</i></p>
 </p>
 
 <p align="center">
