@@ -33,6 +33,9 @@ A fully responsive, multi-page coffee shop website I designed and built entirely
 
 <p align="center">
   <img src="images/frontpage.png" alt="The Front Page of the Website" width="500">
+</p><br>
+<p align="center">
+  <img src="images/menu.png" alt="The Menu Page of the Website" width="500">
 </p>
 
 ---
