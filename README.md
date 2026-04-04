@@ -71,3 +71,10 @@ Custom-built slider with arrow navigation and dynamic indicator dots.
 
 ### 📦 Online Order Page
 Multi-selection form allowing users to choose drinks and artisanal bites.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/nethmihfernando/Coffee-Shop-Website/issues).
