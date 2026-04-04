@@ -86,3 +86,7 @@ Feel free to check the [issues page](https://github.com/nethmihfernando/Coffee-S
 5. Open a Pull Request
 
 ---
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
