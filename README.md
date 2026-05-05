@@ -41,6 +41,8 @@ A fully responsive, multi-page coffee shop website I designed and built entirely
   <img src="images/order.png" alt="The Order Page of the Website" width="500">
 </p>
 
+### Live Demo - https://nethmihfernando.github.io/Coffee-Shop-Website/
+
 ---
 
 ## 🛠 Built With
